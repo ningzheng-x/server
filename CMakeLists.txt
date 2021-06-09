@@ -55,7 +55,7 @@ IF(NOT DEFINED MANUFACTURER)
 ENDIF()
 
 # MAX_INDEXES - Set the maximum number of indexes per table, default 64
-SET(MAX_INDEXES 64 CACHE STRING "Max number of indexes")
+SET(MAX_INDEXES 128 CACHE STRING "Max number of indexes")
 IF (${MAX_INDEXES} GREATER 128)
   MESSAGE(FATAL_ERROR "MAX_INDEXES values greater than 128 is not supported!")
 ENDIF()
